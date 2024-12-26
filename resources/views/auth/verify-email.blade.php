@@ -104,6 +104,7 @@
 
             <form method="POST" action="{{ route('login') }}">
                 @csrf
+                <!-- 路由要建 -->
             </form>
         </div>
     </div>
