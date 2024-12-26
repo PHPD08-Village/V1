@@ -102,11 +102,8 @@
                 </button>
             </form>
 
-            <form method="POST" action="{{ route('logout') }}">
+            <form method="POST" action="{{ route('login') }}">
                 @csrf
-                <button type="submit" class="logout-button">
-                    {{ __('登出') }}
-                </button>
             </form>
         </div>
     </div>
