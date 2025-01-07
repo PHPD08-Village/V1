@@ -179,7 +179,7 @@
 
                 <!-- Password -->
                 <label for="password">密碼 (Password)</label>
-                <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
+                <x-text-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" title="密碼必須至少包含一個大寫字母、一個數字，且長度為8個字元以上" />
                 <x-input-error :messages="$errors->get('password')" class="mt-2" />
 
                 <!-- Confirm Password -->
